@@ -1,0 +1,39 @@
+{
+    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+    "tabnine.experimentalAutoImports": true,
+    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+    "git.autofetch": true,
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "C_Cpp.updateChannel": "Insiders",
+    "terminal.integrated.inheritEnv": false,
+    "inlineFold.supportedLanguages": [
+        "html",
+        "svelte",
+        "css"
+    ],
+    "diffEditor.maxComputationTime": 0,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    },
+    "arduino.useArduinoCli": true,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "rapidapi.terminalLink.enabled": false,
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "glassit.alpha": 237,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.largeFileOptimizations": false,
+    "cloudcode.updateChannel": "Insiders"
+}
