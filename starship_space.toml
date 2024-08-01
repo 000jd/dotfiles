@@ -1,0 +1,89 @@
+# ~/.config/starship.toml
+
+format = """
+[](bg:#1C2B3A fg:#7AACD7)\
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_status\
+$cmd_duration\
+$line_break\
+$character"""
+
+# Other symbols you might like: 👽 🛸 🌠 🪐 🌌 🚀
+[character]
+success_symbol = "[👾 ](green)"
+error_symbol = "[👾 ](red)"
+vimcmd_symbol = "[👾 ](yellow)"
+
+[directory]
+style = "bg:#1C2B3A fg:#7AACD7"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[cmd_duration]
+min_time = 500
+format = "[羽$duration](bold yellow)"
+
+[git_branch]
+symbol = "🌌 "
+format = "[$symbol$branch]($style)"
+style = "bold purple"
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style))'
+style = "cyan"
+conflicted = "🛸"
+ahead = "🚀×${count}"
+behind = "👣×${count}"
+diverged = "♊×${ahead_count}×${behind_count}"
+untracked = "🛰️×${count}"
+stashed = "📦"
+modified = "🔧×${count}"
+staged = "🔭×${count}"
+renamed = "📛×${count}"
+deleted = "🌠×${count}"
+
+[username]
+style_user = "bg:#1C2B3A fg:#7AACD7"
+style_root = "bg:#1C2B3A fg:#FF5555"
+format = '[$user]($style)'
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = "@[$hostname](bold red)"
+disabled = false
+
+# Language versions
+[python]
+symbol = "🐍 "
+format = '[${symbol}${version} ]($style)'
+
+[rust]
+symbol = "🦀 "
+format = '[${symbol}${version} ]($style)'
+
+[java]
+symbol = "☕ "
+format = '[${symbol}${version} ]($style)'
+
+[nodejs]
+symbol = "🟢 "
+format = '[${symbol}${version} ]($style)'
+
+# Disable unused modules
+[package]
+disabled = true
+
+[battery]
+disabled = true
+
+[time]
+disabled = true
+
+[memory_usage]
+disabled = true
